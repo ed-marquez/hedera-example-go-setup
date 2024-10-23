@@ -2,27 +2,34 @@
 image:
   file: .gitpod.Dockerfile
 
-# Rest of the configuration remains the same
 tasks:
-  - name: Setup Environment
-    init: |
-      go mod tidy
-      echo "Workspace setup complete."
-    command: |
-      go run main.go
+  - init: go mod tidy
+  - command: go run main.go
+# # .gitpod.yml
+# image:
+#   file: .gitpod.Dockerfile
 
-ports:
-  - port: 8080
-    onOpen: open-preview
-  - port: 3000
-    onOpen: open-preview
+# # Rest of the configuration remains the same
+# tasks:
+#   - name: Setup Environment
+#     init: |
+#       go mod tidy
+#       echo "Workspace setup complete."
+#     command: |
+#       go run main.go
 
-vscode:
-  extensions:
-    - golang.Go
-    - ms-vscode.go-nightly
-    - streetsidesoftware.code-spell-checker
-    - humao.rest-client
+# ports:
+#   - port: 8080
+#     onOpen: open-preview
+#   - port: 3000
+#     onOpen: open-preview
 
-env:
-  MIRROR_NODE_API_URL: "https://mainnet.mirrornode.hedera.com/api/v1"
+# vscode:
+#   extensions:
+#     - golang.Go
+#     - ms-vscode.go-nightly
+#     - streetsidesoftware.code-spell-checker
+#     - humao.rest-client
+
+# env:
+#   MIRROR_NODE_API_URL: "https://mainnet.mirrornode.hedera.com/api/v1"
