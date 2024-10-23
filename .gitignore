@@ -1,0 +1,118 @@
+# ** Go Build Artifacts **
+##########################
+
+# Binaries for programs and plugins
+/bin/
+/pkg/
+
+# Go workspace file (if using legacy GOPATH)
+/Godeps/
+/vendor/
+
+# Output of the go coverage tool
+coverage.out
+
+# Test binary, build with `go test -c`
+*.test
+
+# ** Dependency Management **
+#############################
+
+# Modules are downloaded to the module cache, not needed in the repo
+/go/pkg/mod/
+
+# Replace or proxy for modules
+replace.go
+
+# ** IDE and Editor Configurations **
+#####################################
+
+# VS Code settings
+.vscode/
+
+# IntelliJ IDEA settings (if using GoLand or other JetBrains IDEs)
+.idea/
+
+# Eclipse project files (if applicable)
+.project
+.classpath
+.c9/
+*.launch
+
+# ** Operating System Files **
+###############################
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ** GitPod Specific **
+#######################
+
+# GitPod workspace settings
+.gitpod/
+
+# ** Environment Variables and Secrets **
+########################################
+
+# Environment variable files (if any)
+.env
+.env.local
+.env.*.local
+
+# ** Log Files **
+################
+
+# Log files
+*.log
+
+# ** Temporary Files **
+#######################
+
+# Temporary files
+tmp/
+temp/
+
+# ** Build Directories **
+########################
+
+# Build directories
+build/
+dist/
+
+# ** Documentation and Reports **
+#################################
+
+# Documentation generated files
+docs/*.html
+docs/*.pdf
+
+# Coverage reports
+coverage/
+
+# ** Other Ignored Files **
+###########################
+
+# Archives and backups
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.swp
+
+# Package distribution
+*.tgz
+*.dmg
+*.exe
+*.msi
+
+# ** Custom Ignored Files **
+###########################
