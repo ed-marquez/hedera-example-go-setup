@@ -1,10 +1,11 @@
 # .gitpod.yml
 
-# Use the official GitPod workspace image that includes Go
-image:
-  image: gitpod/workspace-full:latest
+# Specify the GitPod workspace image with Go pre-installed
+image: gitpod/workspace-full:latest
 
 # Define the tasks to run during workspace setup
 tasks:
-  - init: go mod tidy
-  - command: echo "GitPod workspace is ready for Hedera Go development!"
+  - init: |
+      go mod tidy
+    command: |
+      echo "GitPod workspace is ready for Hedera Go development!"
