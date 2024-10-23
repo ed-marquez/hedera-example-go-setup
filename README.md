@@ -12,7 +12,7 @@ This repository provides a pre-configured GitPod environment to quickly start bu
 
    Click the button below or prepend `https://gitpod.io/#` to your repository URL.
 
-   [![Open in GitPod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ed-marquez/hedera-example-go-setup)
+   [![Open in GitPod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/?autostart=true#https://github.com/ed-marquez/hedera-example-go-setup)
 
 2. **Initialize Dependencies**
 
