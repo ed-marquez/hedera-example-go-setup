@@ -1,35 +1,10 @@
 # .gitpod.yml
-image:
-  file: .gitpod.Dockerfile
 
+# Use the official GitPod workspace image that includes Go
+image:
+  image: gitpod/workspace-full:latest
+
+# Define the tasks to run during workspace setup
 tasks:
   - init: go mod tidy
-  - command: go run main.go
-# # .gitpod.yml
-# image:
-#   file: .gitpod.Dockerfile
-
-# # Rest of the configuration remains the same
-# tasks:
-#   - name: Setup Environment
-#     init: |
-#       go mod tidy
-#       echo "Workspace setup complete."
-#     command: |
-#       go run main.go
-
-# ports:
-#   - port: 8080
-#     onOpen: open-preview
-#   - port: 3000
-#     onOpen: open-preview
-
-# vscode:
-#   extensions:
-#     - golang.Go
-#     - ms-vscode.go-nightly
-#     - streetsidesoftware.code-spell-checker
-#     - humao.rest-client
-
-# env:
-#   MIRROR_NODE_API_URL: "https://mainnet.mirrornode.hedera.com/api/v1"
+  - command: echo "GitPod workspace is ready for Hedera Go development!"
